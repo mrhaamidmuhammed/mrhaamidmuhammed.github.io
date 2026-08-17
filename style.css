@@ -2030,3 +2030,38 @@ footer {
         width: 100%;
     }
 }
+/* =========================
+   MY JOURNEY — ENHANCED
+   ========================= */
+
+.timeline-item h3 strong,
+.timeline-item p strong {
+    color: var(--gold-light);
+    font-weight: 600;
+}
+
+.timeline-item:last-child h3 {
+    color: var(--gold-light);
+}
+
+.timeline-item:last-child::before {
+    width: 12px;
+    height: 12px;
+    left: -41.5px;
+    box-shadow:
+        0 0 0 6px rgba(214,173,85,.10),
+        0 0 25px rgba(214,173,85,.25);
+}
+
+@media (max-width: 600px) {
+
+    .timeline-item p {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .timeline-item h3 {
+        font-size: 18px;
+    }
+
+}
