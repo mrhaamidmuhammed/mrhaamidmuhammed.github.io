@@ -1,12 +1,7 @@
 /* =========================================================
    HAAMID MUHAMMED — PROFESSIONAL PORTFOLIO
-   Black / Gold / Liquid Glass
+   BLACK / GOLD / LIQUID GLASS
    ========================================================= */
-
-
-/* =========================
-   RESET
-   ========================= */
 
 * {
     margin: 0;
@@ -39,25 +34,16 @@ img {
     max-width: 100%;
 }
 
-
-/* =========================
-   VARIABLES
-   ========================= */
-
 :root {
     --gold: #d6ad55;
     --gold-light: #f0d48a;
     --gold-dark: #8d6c2f;
-
     --black: #050505;
     --black-soft: #0b0b0b;
-
     --white: #f5f5f5;
     --muted: #999;
-
     --glass: rgba(255, 255, 255, 0.055);
     --glass-border: rgba(255, 255, 255, 0.12);
-
     --max-width: 1200px;
 }
 
@@ -72,6 +58,7 @@ img {
     z-index: -10;
     pointer-events: none;
     overflow: hidden;
+
     background:
         radial-gradient(
             circle at 15% 20%,
@@ -111,9 +98,11 @@ img {
     position: absolute;
     inset: 0;
     opacity: 0.045;
+
     background-image:
         linear-gradient(rgba(255,255,255,.4) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px);
+
     background-size: 70px 70px;
 }
 
@@ -376,6 +365,7 @@ img {
 
 .button.primary:hover {
     transform: translateY(-3px);
+
     box-shadow:
         0 15px 40px rgba(214,173,85,.25);
 }
@@ -479,10 +469,6 @@ img {
         0 40px 100px rgba(0,0,0,.55),
         inset 0 1px rgba(255,255,255,.1);
 
-    /* IMPORTANT:
-       No rotation.
-       The image stays straight even when hovering.
-    */
     transform: none;
 
     transition:
@@ -516,6 +502,7 @@ img {
 .image-top,
 .image-bottom {
     position: absolute;
+
     left: 25px;
     right: 25px;
 
@@ -1590,15 +1577,16 @@ footer {
     }
 
     /*
-       IMPORTANT MOBILE ORDER
+       MOBILE ORDER
 
-       1. Eyebrow
-       2. Name
-       3. Roles
-       4. Description
-       5. Photo
-       6. Buttons
-       7. Stats
+       1. Personal Portfolio
+       2. Haamid Muhammed
+       3. Programmer / Coder / Builder
+       4. Introduction
+       5. PHOTO
+       6. Explore My Work
+       7. Who Am I?
+       8. Stats
     */
 
     .hero-content {
@@ -1619,12 +1607,18 @@ footer {
         letter-spacing: -3px;
 
         margin-bottom: 20px;
+
+        /* CENTER HAAMID MUHAMMED */
+        text-align: center;
+        width: 100%;
     }
 
     .hero-content .roles {
         order: 3;
 
         flex-wrap: wrap;
+
+        justify-content: center;
 
         gap: 8px;
 
@@ -1633,6 +1627,8 @@ footer {
         line-height: 1.5;
 
         margin-bottom: 18px;
+
+        text-align: center;
     }
 
     .hero-content .hero-text {
@@ -1645,6 +1641,8 @@ footer {
         line-height: 1.75;
 
         margin-bottom: 0;
+
+        text-align: center;
     }
 
 
@@ -1667,7 +1665,6 @@ footer {
 
         border-radius: 21px;
 
-        /* No slant */
         transform: none;
     }
 
@@ -2026,5 +2023,10 @@ footer {
     .modal-box {
         padding: 35px 25px;
     }
-
+}
+@media (max-width: 600px) {
+    .hero-content h1 {
+        text-align: center !important;
+        width: 100%;
+    }
 }
